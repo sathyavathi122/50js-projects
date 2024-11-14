@@ -1,0 +1,44 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: cursive;
+    background-color: slateblue;
+}
+.calendercontainer{
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.3) ;
+}
+.month_name{
+    margin: 0;
+    background-color: orangered;
+    color: white;
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;   
+}
+.day_name{
+    font-size: 20px;
+    color: darkgray;
+
+
+}
+.day_number{
+    font-size: 80px;
+    margin:0 ;
+    font-weight:bold;
+
+}
+.yea_r{
+    margin: 20px 0;
+    font-size: 20px;
+    color: darkgrey;
+    font-size: 500;
+    
+}
