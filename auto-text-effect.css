@@ -1,0 +1,105 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body{
+  overflow-y: hidden;
+  background-color: #333;
+}
+.continer{
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+justify-content: space-evenly;
+
+  
+}
+#headline{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(255,0,0);
+  text-shadow: 2px 2px 20px;
+  background-color: rgb(0,0,0,0.1);
+  height: 100px;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 1rem;
+  transition: 1s;
+}
+#headline:hover{
+  background-color:rgb(0,0,0,0.6);
+  width: 60%;
+  font-size: 33px;
+  
+
+}
+#child1{
+  background-color: rgb(0,0,0,0.1);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  padding-bottom:1rem ;
+  border-radius: 2rem;
+  color:rgb(0,255,0);
+  text-shadow: 2px 2px 20px;
+
+  
+ 
+}
+#child1:hover{
+ animation: animate 1s linear;
+}
+ @keyframes animate{
+  0%{
+    border-bottom: 4px solid rgb(0,255,0);
+
+  }
+  35%{
+    border-left: 4px solid rgb(0,255,0);
+  }
+  70%{
+    border-top:  4px solid rgb(0,255,0);
+  }
+  100%{
+    border-right:  4px solid rgb(0,255,0);
+  }
+}
+
+#child2{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  padding-bottom:1rem ;
+  border-radius: 2rem;
+  background-color: rgb(0,0,0,0.1);
+  color: rgb(0,0,255);
+  text-shadow: 2px 2px 30px;
+  
+  }
+  #child2:hover{
+    animation: animate2 1s linear;
+    
+  }
+  @keyframes animate2{
+    0%{
+      border-bottom: 5px solid rgb(0,0,255);
+  
+    }
+    35%{
+      border-left: 5px solid rgb(0,0,255);
+    }
+    70%{
+      border-top: 5px solid rgb(0,0,255);
+    }
+    100%{
+      border-right: 5px solid rgb(0,0,255);
+    }
+  }
+
+
+
+
