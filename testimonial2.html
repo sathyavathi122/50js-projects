@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: salmon;
+            
+            
+        }
+        .continer{
+            height: 500px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color:rgba(0,0,0,.1);
+            border-radius: 15px;
+            text-align: center;
+
+        }
+        .img{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+        }
+        .pera{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            
+        }
+    </style>
+    <body>
+        <div class="continer">
+         <div id="img">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kPotDC_FESrLH6gkY-QDPwHaFb&pid=Api&P=0&h=180" style="border-radius: 100%;">
+         </div>
+         <div id="pera">
+            <h4><b>
+            Naruto features a diverse cast of characters, each with u
+            nique jutsu, traits and voice actors. Characters can be 
+             by age, power level, 
+             Naruto features a diverse cast of characters, each with u
+            nique jutsu, traits and voice actors. Characters can be 
+             by age, power level, 
+            origin and alignment as hero, villain or something in-between.
+            </h4><br/> </div>
+         <div id="name">
+           <h3> Naruto Uzumaki</h3>
+         </div>
+        </div>
+    </body>
+<script>
+var testmonial=[
+   {
+    photourl:"https://tse4.mm.bing.net/th?id=OIP.kPotDC_FESrLH6gkY-QDPwHaFb&pid=Api&P=0&h=180",
+    content:'Super Hero Of The Rotomachines High Efficient Lowest Fuel Consumption Ever. "The principal applications of NAROTO four fixed arm machine in which the process time for each arm requires a  NAROTO have always been a proactive thinker to gauge market competition, no matter where it comes from. NAROTO have understood the user requirements of trial with small',
+    name:' Naruto Uzumaki'
+   },
+   {
+    photourl:"https://tse1.mm.bing.net/th?id=OIP.RE3R2C3nF2Ae-0Q1B7_kbAHaEK&pid=Api&P=0&h=180",
+    content:'A Genin-level Ninja, Sasuke is the natural genius offspring of the once-powerful Uchiha Clan. One of the most outstanding clans in Konohagakure, the Uchiha Family was known for its Bloodline Limit ability, the Sharingan, and formed much of the Konohagakure’s village police force. Sasuke along with his brother Itachi are the only two known remaining survivors of the clan.',
+    name:'Sasuke Uchiha'
+   },
+   {
+    photourl:"https://tse2.mm.bing.net/th?id=OIP.w3diJjzFbrj06u3-AEX8_QHaGe&pid=Api&P=0&h=180",
+    content:'Casual fans know Hinata grew up to marry the same person she had a crush on her entire childhood: Naruto Uzumaki. She’s a fixture in the franchise, and its spinoff, Boruto: Naruto Next Generations. Fans who were introduced to her as a result of the spinoff series might not realize just how important she was in the original story. Of course, with gaps in the timeline and some versions of novels not available all over the world, even long time fans have questions about her.',
+    name:' Henata'
+   }];
+   let imgele=document.querySelector('img')
+   let contentele=document.querySelector('#pera')
+   let namele=document.querySelector('#name')
+   ind=0
+   function change(){
+   const{photourl,content,name}=testmonial[ind]
+   imgele.src=photourl;
+   contentele.innerHTML=content;
+   namele.innerHTML=`<h2>${name}<h2>`;
+   ind++;
+   if(ind==3){
+    ind=0
+   }
+   }
+   
+   setInterval(change,1000)
+ 
+  
+
+</script>
+  
+</body>
+</html>
